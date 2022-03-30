@@ -19,6 +19,8 @@ The problem then was to have each of the six slimes reliably calculate the short
 
 Further path-checks are also calculated behind-the-scenes to check if a boulder placement will make any of the key paths impossible to make (e.g. by surrounding a house). If this is the case, the boulder placement is blocked and a visual indicator instead warns the player that it was an invalid action. 
 
+![SlimeVillage](https://user-images.githubusercontent.com/90158105/160854968-7669a987-59d1-489a-b8c9-2889b6615143.gif "Placing obstacles")
+
 ## Chosen algorithm
 I chose to use the A* search algorithm as my pathfinding solution due to its efficiency. By using it I was able to calculate very optimised paths, that made use of diagonal route-taking possibilities in a 2D world-space and allow the player to place lots of boulders to impede the slimes without their solutions appearing clumsy, as they might with Dijsktra and other algorithms that A* built upon. The only main drawback to A* is its relative complexity, but it wasn't a major concern for my small-scale problem.
 
@@ -31,3 +33,5 @@ Getting the pathfinding to work properly with multiple characters proved to be a
 
 ## Future of the project
 I'm currently working on adding day-and-night driven systems, scheduled pathfinding using in-game time, a playable character, and scaling up the grid from its humble 10x20 size. I also want to make a mobile build of the game later. More generally, I see this as a system that I can reutilise for projects in the future that require pathfinding.
+
+
