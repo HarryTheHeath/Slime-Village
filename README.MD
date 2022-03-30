@@ -1,7 +1,7 @@
 # READ-ME
 
 ## Overview
-This project originated from a  pathfinding assignment set by Forsbergs Skola. The goal was to come up with a unique problem and solve it using an appropriate algorithm of my choosing. The original repo can be for it can be found [here](# READ-ME
+This project originated from a pathfinding assignment set by Forsbergs Skola. The goal was to come up with a unique problem and solve it using an appropriate algorithm of my choosing. The original rep for it can be found on the school's github [here](https://github.com/forsbergsskola-se/gp21-22-0209-algodata-HarryTheHeath).
 
 ## Overview
 This project was made to fulfill a pathfinding assignment set by Forsbergs Skola. The goal was to come up with a unique problem and solve it using an appropriate algorithm of my choosing.
@@ -11,9 +11,11 @@ Due to my love of games that feature communities full of characters who seemingl
 Why slimes? Because they're simple to animate and cute.
 
 ## The Game
-A demo build is currently available on Unity Play [here](https://github.com/forsbergsskola-se/gp21-22-0209-algodata-HarryTheHeath).
+A demo build is currently available on Itch.io [here](https://harrytheheath.itch.io/slime-village).
 
 Left-click when slimes aren't moving to assign new paths. Right-click anywhere, except shrines and houses, to place boulders.
+
+![Winter](https://user-images.githubusercontent.com/90158105/160833871-c6335f09-6941-497b-8c47-213ac437502e.png "Winter Gameplay Still")
 
 ## My pathfinding problem
 The problem then was to have each of the six slimes reliably calculate the shortest path it must take to reach the shines from its house and vise-versa. In addition to this, I made it so that the player can place boulders to obstruct their paths, even when they're in motion. If the player does so the slimes recalculate their pathfinding on the spot and immediately adapt, again finding the new shortest paths that they must take. These live calculations are visualised by debug draw-lines that match the colour of the slime that they're representing. 
